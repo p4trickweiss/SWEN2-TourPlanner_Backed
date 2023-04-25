@@ -35,7 +35,7 @@ public class TourService {
         tourRepository.save(tour);
     }
 
-    public void updateTour(Integer tourId, NewTour newTour) {
+    public void updateTour(Long tourId, NewTour newTour) {
         Tour tour = new Tour();
         tour.setId(tourId);
         tour.setName(newTour.name());

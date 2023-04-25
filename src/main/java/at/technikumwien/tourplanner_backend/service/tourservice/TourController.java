@@ -36,7 +36,7 @@ public class  TourController {
     }
 
     @PutMapping("/{tourId}")
-    public void updateTour(@PathVariable("tourId") Integer tourId, @RequestBody NewTour tour) {
+    public void updateTour(@PathVariable("tourId") Long tourId, @RequestBody NewTour tour) {
         this.tourService.updateTour(tourId, tour);
     }
 

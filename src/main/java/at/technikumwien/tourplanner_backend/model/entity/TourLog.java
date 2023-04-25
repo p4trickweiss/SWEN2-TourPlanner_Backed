@@ -1,5 +1,6 @@
 package at.technikumwien.tourplanner_backend.model.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
@@ -16,8 +17,8 @@ public class TourLog {
             strategy = GenerationType.SEQUENCE,
             generator = "tour_log_id_sequence"
     )
-    private Integer id;
-    private LocalDateTime time_stamp;
+    private Long id;
+    private String time_stamp;
     private String comment;
     private String difficulty;
     private String total_time;
@@ -26,19 +27,19 @@ public class TourLog {
     @JoinColumn(name = "fk_tourId", nullable = false)
     private Tour tour;
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
-    public LocalDateTime getTime_stamp() {
+    public String getTime_stamp() {
         return time_stamp;
     }
 
-    public void setTime_stamp(LocalDateTime timeStamp) {
+    public void setTime_stamp(String timeStamp) {
         this.time_stamp = timeStamp;
     }
 

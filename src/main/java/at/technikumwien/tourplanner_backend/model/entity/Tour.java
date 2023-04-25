@@ -1,8 +1,9 @@
 package at.technikumwien.tourplanner_backend.model.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
-import java.util.Set;
+import java.util.List;
 
 @Entity
 public class Tour {
@@ -16,7 +17,7 @@ public class Tour {
             strategy = GenerationType.SEQUENCE,
             generator = "tour_id_sequence"
     )
-    private Integer id;
+    private Long id;
     private String name;
     private String tour_description;
     private String tour_from;
@@ -25,15 +26,16 @@ public class Tour {
     private String tour_distance;
     private String estimated_time;
     private String route_information;
-    @OneToMany(mappedBy = "tour", cascade = CascadeType.REMOVE)
-    private Set<TourLog> tourLogs;
+    @OneToMany(mappedBy = "tour", cascade = CascadeType.REMOVE, fetch = FetchType.LAZY)
+    @JsonIgnoreProperties("tour") // ignore tour property in TourLog
+    private List<TourLog> tourLogs;
 
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -101,11 +103,11 @@ public class Tour {
         this.route_information = route_information;
     }
 
-    public Set<TourLog> getTourLogs() {
+    public List<TourLog> getTourLogs() {
         return tourLogs;
     }
 
-    public void setTourLogs(Set<TourLog> tourLogs) {
+    public void setTourLogs(List<TourLog> tourLogs) {
         this.tourLogs = tourLogs;
     }
 }
