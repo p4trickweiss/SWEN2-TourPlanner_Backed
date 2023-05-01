@@ -24,7 +24,7 @@ public class  TourController {
     }
 
     @GetMapping("/{tourId}")
-    public Tour getTourById(@PathVariable("tourId") Integer tourId) {
+    public Tour getTourById(@PathVariable("tourId") Long tourId) {
         return this.tourService.getTourById(tourId)
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Content not found"));
     }
@@ -41,7 +41,7 @@ public class  TourController {
     }
 
     @DeleteMapping("/{tourId}")
-    public void deleteTour(@PathVariable("tourId") Integer tourId) {
+    public void deleteTour(@PathVariable("tourId") Long tourId) {
         this.tourService.deleteTour(tourId);
     }
 }
