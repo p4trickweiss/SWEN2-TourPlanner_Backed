@@ -4,24 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9d9df47-4fc2-4b1f-b5ba-621c1562de54" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/config/MapQuestConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/model/dto/mapquest/BoundingBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/repository/TourLogRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/service/tourstatsservice/TourStatsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/service/tourstatsservice/TourStatsService.java" afterDir="false" />
+    <list default="true" id="e9d9df47-4fc2-4b1f-b5ba-621c1562de54" name="Changes" comment="mapquest request works">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/model/dto/NewTour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/model/dto/NewTour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/model/entity/Tour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/model/entity/Tour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/repository/TourRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/repository/TourRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/service/tourservice/TourController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/service/tourservice/TourController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/service/tourservice/TourService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/service/tourservice/TourService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/at/technikumwien/tourplanner_backend/model/dto/NewTour.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/at/technikumwien/tourplanner_backend/model/dto/NewTour.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/at/technikumwien/tourplanner_backend/model/entity/Tour.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/at/technikumwien/tourplanner_backend/model/entity/Tour.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/at/technikumwien/tourplanner_backend/repository/TourRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/at/technikumwien/tourplanner_backend/repository/TourRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/at/technikumwien/tourplanner_backend/service/tourservice/TourController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/at/technikumwien/tourplanner_backend/service/tourservice/TourController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/at/technikumwien/tourplanner_backend/service/tourservice/TourService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/at/technikumwien/tourplanner_backend/service/tourservice/TourService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +117,23 @@
       <workItem from="1682857383175" duration="2175000" />
       <workItem from="1682946973272" duration="13000" />
       <workItem from="1682947438443" duration="587000" />
+      <workItem from="1682948141991" duration="45000" />
     </task>
+    <task id="LOCAL-00001" summary="mapquest request works">
+      <created>1682948159699</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682948159699</updated>
+    </task>
+    <task id="LOCAL-00002" summary="mapquest request works">
+      <created>1682948168746</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682948168746</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +149,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="mapquest request works" />
+    <option name="LAST_COMMIT_MESSAGE" value="mapquest request works" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
