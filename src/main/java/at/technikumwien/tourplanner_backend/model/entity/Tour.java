@@ -25,6 +25,7 @@ public class Tour {
     private String transport_type;
     private String tour_distance;
     private String estimated_time;
+    @Column(columnDefinition = "TEXT")
     private String route_information;
     @OneToMany(mappedBy = "tour", cascade = CascadeType.REMOVE, fetch = FetchType.LAZY)
     @JsonIgnoreProperties("tour") // ignore tour property in TourLog
