@@ -5,6 +5,6 @@ public record NewTourLog(
         String difficulty,
         String totalTime,
         Integer rating,
-        Integer fk_tourId
+        Long fk_tourId
 ) {
 }
