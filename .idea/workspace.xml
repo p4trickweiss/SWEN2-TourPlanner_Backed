@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9d9df47-4fc2-4b1f-b5ba-621c1562de54" name="Changes" comment="changed port mapping db">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/model/dto/NewTourLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/model/dto/NewTourLog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/model/entity/Tour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/model/entity/Tour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/service/tourlogservice/TourLogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/service/tourlogservice/TourLogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/service/tourlogservice/TourLogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/service/tourlogservice/TourLogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+    <list default="true" id="e9d9df47-4fc2-4b1f-b5ba-621c1562de54" name="Changes" comment="tourlog crud works">
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/at/technikumwien/tourplanner_backend/model/dto/NewTourLog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/at/technikumwien/tourplanner_backend/model/dto/NewTourLog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/at/technikumwien/tourplanner_backend/model/entity/Tour.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/at/technikumwien/tourplanner_backend/model/entity/Tour.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/at/technikumwien/tourplanner_backend/service/tourlogservice/TourLogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/at/technikumwien/tourplanner_backend/service/tourlogservice/TourLogController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/at/technikumwien/tourplanner_backend/service/tourlogservice/TourLogService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/at/technikumwien/tourplanner_backend/service/tourlogservice/TourLogService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,7 +128,7 @@
       <workItem from="1683552187713" duration="610000" />
       <workItem from="1683888259625" duration="652000" />
       <workItem from="1683889308498" duration="275000" />
-      <workItem from="1683901966062" duration="2066000" />
+      <workItem from="1683901966062" duration="2432000" />
     </task>
     <task id="LOCAL-00001" summary="mapquest request works">
       <created>1682948159699</created>
@@ -152,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682948337875</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="tourlog crud works">
+      <created>1683904166850</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683904166850</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,7 +178,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="mapquest request works" />
     <MESSAGE value="changed port mapping db" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed port mapping db" />
+    <MESSAGE value="tourlog crud works" />
+    <option name="LAST_COMMIT_MESSAGE" value="tourlog crud works" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
