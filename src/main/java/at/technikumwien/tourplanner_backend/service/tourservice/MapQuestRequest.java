@@ -5,6 +5,8 @@ import at.technikumwien.tourplanner_backend.model.dto.mapquest.MapQuestJson;
 import at.technikumwien.tourplanner_backend.model.dto.mapquest.MapQuestResponse;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import java.net.URI;
@@ -14,6 +16,7 @@ import java.net.http.HttpResponse;
 
 @Service
 public class MapQuestRequest {
+    Logger logger = LoggerFactory.getLogger(MapQuestRequest.class);
     private final HttpClient httpClient;
     private final ObjectMapper objectMapper;
 
@@ -42,7 +45,7 @@ public class MapQuestRequest {
             responseBody = response.body();
         }
         catch (Exception e) {
-            System.out.println(e.getMessage());
+            logger.error(e.getMessage());
         }
         return responseBody;
     }
@@ -53,7 +56,7 @@ public class MapQuestRequest {
             res = objectMapper.readValue(mapQuestResult, MapQuestJson.class);
         }
         catch (Exception e) {
-            System.out.println(e.getMessage());
+            logger.error(e.getMessage());
         }
         return res;
     }

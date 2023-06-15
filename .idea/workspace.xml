@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9d9df47-4fc2-4b1f-b5ba-621c1562de54" name="Changes" comment="tourlog crud works">
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/at/technikumwien/tourplanner_backend/model/dto/NewTourLog.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/at/technikumwien/tourplanner_backend/model/dto/NewTourLog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/at/technikumwien/tourplanner_backend/model/entity/Tour.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/at/technikumwien/tourplanner_backend/model/entity/Tour.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/at/technikumwien/tourplanner_backend/service/tourlogservice/TourLogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/at/technikumwien/tourplanner_backend/service/tourlogservice/TourLogController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/at/technikumwien/tourplanner_backend/service/tourlogservice/TourLogService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/at/technikumwien/tourplanner_backend/service/tourlogservice/TourLogService.class" afterDir="false" />
+    <list default="true" id="e9d9df47-4fc2-4b1f-b5ba-621c1562de54" name="Changes" comment="ready to merge with main">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/service/tourlogservice/TourLogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/service/tourlogservice/TourLogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/service/tourlogservice/TourLogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/service/tourlogservice/TourLogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/service/tourservice/MapQuestRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/service/tourservice/MapQuestRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/service/tourservice/TourController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/service/tourservice/TourController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/service/tourservice/TourService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/service/tourservice/TourService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/service/tourstatsservice/TourStatsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/service/tourstatsservice/TourStatsService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/at/technikumwien/tourplanner_backend/service/tourservice/TourController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/at/technikumwien/tourplanner_backend/service/tourservice/TourController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +33,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="MapQuestApi" />
+        <entry key="$PROJECT_DIR$" value="TourLog-Routes" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -49,26 +53,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;TourLog-Routes&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/patrick/Dev/SWEN2/semester project/SWEN2-TourPlanner_Backed&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;4a0b14428ab0073427f810513314b4d0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Logging",
+    "last_opened_file_path": "/Users/patrick/Dev/SWEN2/semester project/SWEN2-TourPlanner_Backed",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "spring.configuration.checksum": "4a0b14428ab0073427f810513314b4d0",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Spring Boot.Application">
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="tourplanner_backend" />
@@ -128,7 +133,11 @@
       <workItem from="1683552187713" duration="610000" />
       <workItem from="1683888259625" duration="652000" />
       <workItem from="1683889308498" duration="275000" />
-      <workItem from="1683901966062" duration="2432000" />
+      <workItem from="1683901966062" duration="2644000" />
+      <workItem from="1683913911977" duration="32000" />
+      <workItem from="1684422462082" duration="611000" />
+      <workItem from="1684489170478" duration="5254000" />
+      <workItem from="1686829456417" duration="1508000" />
     </task>
     <task id="LOCAL-00001" summary="mapquest request works">
       <created>1682948159699</created>
@@ -158,7 +167,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683904166850</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="ready to merge with main">
+      <created>1683904610190</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1683904610190</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,7 +195,8 @@
     <MESSAGE value="mapquest request works" />
     <MESSAGE value="changed port mapping db" />
     <MESSAGE value="tourlog crud works" />
-    <option name="LAST_COMMIT_MESSAGE" value="tourlog crud works" />
+    <MESSAGE value="ready to merge with main" />
+    <option name="LAST_COMMIT_MESSAGE" value="ready to merge with main" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
