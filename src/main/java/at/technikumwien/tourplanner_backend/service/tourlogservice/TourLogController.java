@@ -3,6 +3,7 @@ package at.technikumwien.tourplanner_backend.service.tourlogservice;
 import at.technikumwien.tourplanner_backend.model.dto.NewTourLog;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -15,6 +16,7 @@ public class TourLogController {
         this.tourLogService = tourLogService;
     }
 
+    @ResponseStatus(HttpStatus.CREATED)
     @PostMapping()
     public void addLog(@RequestBody NewTourLog newTourLog) {
         logger.info("addLog called");
