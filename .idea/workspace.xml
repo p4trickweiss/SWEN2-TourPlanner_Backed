@@ -4,16 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9d9df47-4fc2-4b1f-b5ba-621c1562de54" name="Changes" comment="ready to merge with main">
+    <list default="true" id="e9d9df47-4fc2-4b1f-b5ba-621c1562de54" name="Changes" comment="added basic logging">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/service/tourlogservice/TourLogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/service/tourlogservice/TourLogController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/service/tourlogservice/TourLogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/service/tourlogservice/TourLogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/service/tourservice/MapQuestRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/service/tourservice/MapQuestRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/service/tourservice/TourController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/service/tourservice/TourController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/service/tourservice/TourService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/service/tourservice/TourService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/service/tourstatsservice/TourStatsController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/technikumwien/tourplanner_backend/service/tourstatsservice/TourStatsService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/at/technikumwien/tourplanner_backend/service/tourservice/TourController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/at/technikumwien/tourplanner_backend/service/tourservice/TourController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/at/technikumwien/tourplanner_backend/ApplicationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/at/technikumwien/tourplanner_backend/service/logservice/LogController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/at/technikumwien/tourplanner_backend/service/logservice/LogService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/at/technikumwien/tourplanner_backend/service/tourlogservice/TourLogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/at/technikumwien/tourplanner_backend/service/tourlogservice/TourLogController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/at/technikumwien/tourplanner_backend/service/tourlogservice/TourLogService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/at/technikumwien/tourplanner_backend/service/tourlogservice/TourLogService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/at/technikumwien/tourplanner_backend/service/tourservice/MapQuestRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/at/technikumwien/tourplanner_backend/service/tourservice/MapQuestRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/at/technikumwien/tourplanner_backend/service/tourservice/TourService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/at/technikumwien/tourplanner_backend/service/tourservice/TourService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/at/technikumwien/tourplanner_backend/service/tourstatsservice/TourStatsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/at/technikumwien/tourplanner_backend/service/tourstatsservice/TourStatsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/at/technikumwien/tourplanner_backend/ApplicationTest$Calculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/at/technikumwien/tourplanner_backend/ApplicationTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,13 +31,14 @@
         <option value="Enum" />
         <option value="Class" />
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="TourLog-Routes" />
+        <entry key="$PROJECT_DIR$" value="Logging" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -53,28 +58,111 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Logging",
-    "last_opened_file_path": "/Users/patrick/Dev/SWEN2/semester project/SWEN2-TourPlanner_Backed",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "4a0b14428ab0073427f810513314b4d0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;UnitTests&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/patrick/Dev/SWEN2/semester project/SWEN2-TourPlanner_Backed&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;4a0b14428ab0073427f810513314b4d0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Spring Boot.Application">
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="at.technikumwien.tourplanner_backend.service.tourlogservice" />
+      <recent name="at.technikumwien.tourplanner_backend.service.tourservice" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.java in tourplanner_backend">
+    <configuration name="TourControllerTest.getTourById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tourplanner_backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.technikumwien.tourplanner_backend.service.tourservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="at.technikumwien.tourplanner_backend.service.tourservice" />
+      <option name="MAIN_CLASS_NAME" value="at.technikumwien.tourplanner_backend.service.tourservice.TourControllerTest" />
+      <option name="METHOD_NAME" value="getTourById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TourControllerTest.getTours" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tourplanner_backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.technikumwien.tourplanner_backend.service.tourservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="at.technikumwien.tourplanner_backend.service.tourservice" />
+      <option name="MAIN_CLASS_NAME" value="at.technikumwien.tourplanner_backend.service.tourservice.TourControllerTest" />
+      <option name="METHOD_NAME" value="getTours" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TourLogControllerTest.deleteLog_noId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tourplanner_backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.technikumwien.tourplanner_backend.service.tourlogservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="at.technikumwien.tourplanner_backend.service.tourlogservice" />
+      <option name="MAIN_CLASS_NAME" value="at.technikumwien.tourplanner_backend.service.tourlogservice.TourLogControllerTest" />
+      <option name="METHOD_NAME" value="deleteLog_noId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TourLogControllerTest.updateLog_noId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tourplanner_backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="at.technikumwien.tourplanner_backend.service.tourlogservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="at.technikumwien.tourplanner_backend.service.tourlogservice" />
+      <option name="MAIN_CLASS_NAME" value="at.technikumwien.tourplanner_backend.service.tourlogservice.TourLogControllerTest" />
+      <option name="METHOD_NAME" value="updateLog_noId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="java in tourplanner_backend" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="tourplanner_backend" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="tourplanner_backend" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="at.technikumwien.tourplanner_backend.Application" />
@@ -88,17 +176,13 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="JUnit.java in tourplanner_backend" />
+        <item itemvalue="JUnit.TourLogControllerTest.deleteLog_noId" />
+        <item itemvalue="JUnit.TourControllerTest.getTours" />
+        <item itemvalue="JUnit.TourControllerTest.getTourById" />
+        <item itemvalue="JUnit.TourLogControllerTest.updateLog_noId" />
       </list>
     </recent_temporary>
   </component>
@@ -137,7 +221,9 @@
       <workItem from="1683913911977" duration="32000" />
       <workItem from="1684422462082" duration="611000" />
       <workItem from="1684489170478" duration="5254000" />
-      <workItem from="1686829456417" duration="1508000" />
+      <workItem from="1686829456417" duration="7109000" />
+      <workItem from="1686906169663" duration="83000" />
+      <workItem from="1686927452388" duration="4193000" />
     </task>
     <task id="LOCAL-00001" summary="mapquest request works">
       <created>1682948159699</created>
@@ -174,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683904610190</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added basic logging">
+      <created>1686831055466</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1686831055466</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,7 +289,8 @@
     <MESSAGE value="changed port mapping db" />
     <MESSAGE value="tourlog crud works" />
     <MESSAGE value="ready to merge with main" />
-    <option name="LAST_COMMIT_MESSAGE" value="ready to merge with main" />
+    <MESSAGE value="added basic logging" />
+    <option name="LAST_COMMIT_MESSAGE" value="added basic logging" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
