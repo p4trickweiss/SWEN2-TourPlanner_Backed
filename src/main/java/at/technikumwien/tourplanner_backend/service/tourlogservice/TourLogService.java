@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Optional;
 
 @Service
 public class TourLogService {
@@ -30,6 +31,9 @@ public class TourLogService {
     }
 
     public void updateTourLog(Long logId, NewTourLog newTourLog) {
+        Optional<TourLog> oldLog = tourLogRepository.findById(logId);
+        Long tourId = oldLog.get().getTour().getId();
+
         TourLog tourLog = mapNewTourLogToTourLog(newTourLog);
         tourLog.setId(logId);
         this.tourLogRepository.save(tourLog);
