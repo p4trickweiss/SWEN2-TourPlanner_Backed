@@ -7,4 +7,5 @@ public record NewTourLog(
         Integer rating,
         Long fk_tourId
 ) {
+
 }

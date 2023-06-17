@@ -52,4 +52,10 @@ public class  TourController {
         logger.info("deleteTour called");
         this.tourService.deleteTour(tourId);
     }
+
+    @DeleteMapping("/delete")
+    public void deleteAll() {
+        logger.info("deleteAll called");
+        this.tourService.deleteAll();
+    }
 }

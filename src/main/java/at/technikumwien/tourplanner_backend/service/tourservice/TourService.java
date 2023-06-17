@@ -51,6 +51,11 @@ public class TourService {
         logger.info("deleted Tour with id " + tourId);
     }
 
+    public void deleteAll() {
+        tourRepository.deleteAll();
+        logger.info("deleted all tours");
+    }
+
     private Tour createTourFromNewTourAndMapQuestResponse(NewTour newTour, MapQuestResponse mapQuestResponse) {
         Tour tour = new Tour();
         tour.setName(newTour.name());
